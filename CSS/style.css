@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+  --Green: #c4f82a;
+  --White: #ffffff;
+  --Grey-700: #333333;
+  --Grey-800: #1f1f1f;
+  --Grey-900: #141414;
+
+  /* Font family */
+  --font-base: "Inter", sans-serif;
+
+  /* Typography presets */
+  --tp1: 700 1.5rem/150% var(--font-base);
+  --tp2: 400 0.875rem/150% var(--font-base);
+  --tp2b: 600 0.875rem/150% var(--font-base);
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--Grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container {
+  background-color: var(--Grey-800);
+  padding: 2.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.profile_pic {
+  max-width: 88px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.name {
+  font: var(--tp1);
+  margin-bottom: 4px;
+  color: var(--White);
+  text-align: center;
+}
+.location {
+  color: var(--Green);
+  font: var(--tp2b);
+  text-align: center;
+}
+.bio {
+  color: var(--White);
+  font: var(--tp2);
+  text-align: center;
+}
+
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: stretch;
+}
+
+
+.btn{
+  font: var(--tp2b);
+  background-color: var(--Grey-700);
+  color: var(--White);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover{
+    background-color: var(--Green);
+    cursor: pointer;
+    color:var(--Grey-700);
+  }
+
+  @media (max-width: 375px) {
+    .card_container {
+    width: 100%;      
+    max-width: 327px;  
+  }
+  }
+ 
