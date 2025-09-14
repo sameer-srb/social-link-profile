@@ -1,8 +1,11 @@
+/* =============== Reset =============== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ============== Global Variables ============== */
 :root {
   /* Colors */
   --Green: #c4f82a;
@@ -19,6 +22,8 @@
   --tp2: 400 0.875rem/150% var(--font-base);
   --tp2b: 600 0.875rem/150% var(--font-base);
 }
+
+/* =============== BODY STYLES =============== */
 body {
   min-height: 100vh;
   width: 100%;
@@ -28,6 +33,7 @@ body {
   align-items: center;
 }
 
+/* =============== CARD CONTAINER =============== */
 .card_container {
   background-color: var(--Grey-800);
   padding: 2.5rem;
@@ -37,6 +43,8 @@ body {
   align-items: center;
   gap: 24px;
 }
+
+/* =============== PROFILE IMAGE =============== */
 .profile_pic {
   max-width: 88px;
   width: 100%;
@@ -44,6 +52,7 @@ body {
   border-radius: 50%;
 }
 
+/* =============== TEXT STYLES =============== */
 .name {
   font: var(--tp1);
   margin-bottom: 4px;
@@ -61,7 +70,7 @@ body {
   text-align: center;
 }
 
-
+/* =============== SOCIAL LINKS =============== */
 .links {
   display: flex;
   flex-direction: column;
@@ -69,8 +78,8 @@ body {
   align-self: stretch;
 }
 
-
-.btn{
+/* =============== BUTTONS =============== */
+.btn {
   font: var(--tp2b);
   background-color: var(--Grey-700);
   color: var(--White);
@@ -80,16 +89,19 @@ body {
   text-decoration: none;
 }
 
-.btn:hover{
-    background-color: var(--Green);
-    cursor: pointer;
-    color:var(--Grey-700);
-  }
+/* =============== Button hover effect =============== */
+.btn:hover {
+  background-color: var(--Green);
+  cursor: pointer;
+  color: var(--Grey-700);
+}
 
-  @media (max-width: 375px) {
-    .card_container {
-    width: 100%;      
-    max-width: 327px;  
+/* -------------------- 
+        RESPONSIVE DESIGN
+        -------------------- */
+@media (max-width: 375px) {
+  .card_container {
+    width: 100%;
+    max-width: 327px;
   }
-  }
- 
+}
